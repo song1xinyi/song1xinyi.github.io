@@ -1,0 +1,13 @@
+.container {
+            position: relative;
+            text-align: center;
+            width: 300px; /* 图片宽度 */
+        }
+
+        .text-over-image {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+        }

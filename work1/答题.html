@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>答题</title>
+    <script>
+    function back(){
+      window.history.back();
+    }
+    function finish(){
+      alert("正确答案是：1.A  2.B  3.C     你答对了吗^_^ ")
+    }
+    </script>
+    <style media="screen">
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg.webp'); /* 添加背景图 */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* 使背景图填满整个页面 */
+  }
+
+  form {
+    background-color: rgba(255, 255, 255, 0.8); /* 添加半透明白色背景 */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  .olCSS {
+    list-style: none;
+  }
+
+  .inputClass {
+    float: left;
+    margin-right: 10px
+    text-align:center;
+  }
+
+  .liRight {
+  }
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="question">
+        1.枯藤____昏鸦，小桥流水人家，古道____瘦马。夕阳西下，断肠人在天涯。
+        <ol type="A" start class="olCSS" name="single">
+          <input class="inputClass" type="radio" name="Q1" value="10">
+          <li class="liRight"> A. 老树，西风</li>
+          <input class="inputClass" type="radio" name="Q1" value="0">
+          <li class="liRight"> B. 残枝，北风</li>
+          <input class="inputClass" type="radio" name="Q1" value="0">
+          <li class="liRight"> C. 老树，北风</li>
+        </ol>
+      </div>
+
+      <div class="question">
+        2.大弦嘈嘈如____，小弦切切如____，嘈嘈切切错杂弹，大珠小珠落玉盘。
+        <ol type="A" start class="olCSS" name="single">
+          <input class="inputClass" type="radio" name="Q2" value="0">
+          <li class="liRight"> A. 急雨，丝雨</li>
+          <input class="inputClass" type="radio" name="Q2" value="10">
+          <li class="liRight"> B. 急雨，私语</li>
+          <input class="inputClass" type="radio" name="Q2" value="0">
+          <li class="liRight"> C. 骤雨，私语</li>
+        </ol>
+      </div>
+
+      <div class="question">
+        3.林花谢了____，太匆匆。无奈朝来寒雨晚来风。胭脂泪，相留醉，几时重。自是人生长恨水____。
+        <ol type="A" start class="olCSS" name="single">
+          <input class="inputClass" type="radio" name="Q3" value="0">
+          <li class="liRight"> A. 柳绿，长流</li>
+          <input class="inputClass" type="radio" name="Q3" value="0">
+          <li class="liRight"> B. 春洪，长流</li>
+          <input class="inputClass" type="radio" name="Q3" value="10">
+          <li class="liRight"> C. 春红，长东</li>
+        </ol>
+      </div>
+
+      <div>
+        <button type="button" onclick="back()" class="btn btn-secondary">退出</button>
+        <button type="button" onclick="finish()" class="btn btn-secondary">提交</button>
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
